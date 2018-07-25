@@ -422,13 +422,18 @@
                 <p>I am a Voice Actor & Audio Engineer specializing in Technical narrative, Video Game Characters & Movie Trailers. I work with a Yeti Blue microphone with Audacity audio software.</p>
                 <h4>Characters Sample</h4>
                 <audio controls>
-                  <source src="./assets/KielByrne_C.mp3" type="audio/ogg">
-                Your browser does not support the audio element.
+                  <source src="./assets/KielByrne_C.mp3" type="audio/mp3">
+                  Your browser does not support the audio element.
                 </audio>
                 <h4>Narrative Sample</h4>
                 <audio controls>
-                  <source src="./assets/KielByrne_N.mp3" type="audio/ogg">
-                Your browser does not support the audio element.
+                  <source src="./assets/KielByrne_N.mp3" type="audio/mp3">
+                  Your browser does not support the audio element.
+                </audio>
+                <h4>Technical Sample (Multi-Modal Transportation Plan)</h4>
+                <audio controls>
+                  <source src="./assets/KielByrne_NN_NORTA.mp3" type="audio/mp3">
+                  Your browser does not support the audio element.
                 </audio>
               </div>
               <div><h3 class="text-center">MISC.</h3></div>
