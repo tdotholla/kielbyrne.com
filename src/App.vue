@@ -35,6 +35,15 @@
   h2 {
     font-size: 3.5rem;
   }
+  ul {
+    list-style: none;   
+    padding: 0px;
+}
+  
+  .dec-list:before {
+    content: "\2666";
+    margin: 0 1rem;
+  }
 
   .subheading {
     text-transform: uppercase;
@@ -199,7 +208,14 @@
             <div class="subheading mb-5"> Silver Spring, MD 20902 · (914) 512-8532 ·
               <a href="mailto:kiel.byrne@gmail.com">kiel.byrne@gmail.com</a>
             </div>
-            <p class="mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+            <p class="mb-5">
+              <ul>
+                <li class="dec-list">IT Services Engineer leveraging data and bespoke web-applications to support sustainable operations and resilient infrastructure.</li>
+                <li class="dec-list">Software developer with a passion for leveraging crowd-sourced data to create tools that work as progressive web applications.  </li>  
+                <li class="dec-list">Consult w/ small businesses to procure, configure, maintain IT systems & establish web/social media presence. </li>
+                <li class="dec-list">Voice Actor & Audio Engineer specializing in Technical narrative, Video Game Characters & Movie Trailers.</li>
+              </ul>
+        </p>
             <ul class="list-inline list-social-icons mb-0">
               <li class="list-inline-item">
                 <a href="https://www.facebook.com/TdotHolla">
@@ -245,7 +261,7 @@
                 <h3 class="mb-0">{{exp.title}}</h3>
                 <div class="subheading mb-3">{{exp.company}}</div>
                 <ul>
-                  <li v-for="des in exp.description">{{des}}</li>
+                  <li class="dec-list" v-for="des in exp.description">{{des}}</li>
                 </ul>
               </div>
               <div class="resume-date text-md-right">
@@ -289,7 +305,7 @@
             <h2 class="mb-5">Skills</h2>
 
             <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-            <ul class="list-inline list-icons">
+            <ul class="list-inline list-icons ">
               <li class="list-inline-item">
                 <i class="devicons devicons-html5"></i>
               </li>
@@ -333,7 +349,7 @@
                 <i class="devicons devicons-windows"></i>
               </li>
               <li class="list-inline-item">
-                <i class="devicons devicons-osx"></i>
+                <i class="devicons devicons-os"></i>
               </li>
               <li class="list-inline-item">
                 <i class="devicons devicons-linux"></i>
@@ -349,7 +365,7 @@
               </li>
             </ul>
 
-            <div class="subheading mb-3">Workflow</div>
+            <div class="subheading mb-3">Work-flow</div>
             <ul class="fa-ul mb-0">
               <li>
                 <i class="fa-li fa fa-check"></i>
@@ -366,12 +382,12 @@
             </ul>
           </div>
         </section>
- 
+
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
           <div class="my-auto">
             <h2 class="mb-5">Interests</h2>
             <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skiier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-            <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technolgy advancements in the front-end web development world.</p>
+            <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
           </div>
         </section>
 
@@ -380,17 +396,41 @@
             <h2 class="mb-5">Work Samples</h2>
             <div>
               <h3 class="text-center">CODE</h3>
-              <section class="text-monospace"><h4>MOBB</h4>
+              <section class="text-monospace container-fluid">
+                <h4>PAKKE</h4>
+                <p>PAKKE is <em>the</em> resource to host, entertain, and attend unique local experiences. it is informative, responsive, progressive and socially engaging. The community is comprised of local entertainers, owners of inviting & accepting spaces, and party-goers bored with the 'typical night out'. <span><a href="https://www.pakke.us" target="_blank">PAKKE.us</a></span>
+                </p>
+                <img width="320"  class="float-left mr-3" src="./assets/ss_pakke_mobile.png" />
+                <img width="800"  class=" mr-3" src="./assets/ssf_pakke_desktop.png" />                
+              </section>
+
+              <section class="text-monospace container-fluid">
+                <h4>MOBB</h4>
                 <p>The MOBB is a tool to locate businesses closest to you that are owned by those in Our Community. As a tool, It aims to help you discover new business near you, wherever you may be. <span><a href="https://www.mobb.biz" target="_blank">MOBB.biz</a></span>
                 </p>
-                <img src="./assets/ss_mobb_mobile.png" />
-                <video width="400" controls autoplay />
-                  <source src="" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+                <img width="320"  class="float-left mr-3" src="./assets/ss_mobb_mobile.png" />
+                
+                  <video width="320" controls >
+                    <source src="./assets/MOBB_Demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                
               </section>
             </div>
-              <div><h3 class="text-center">MEDIA</h3></div>
+              <div>
+                <h3 class="text-center">MEDIA</h3>
+                <p>I am a Voice Actor & Audio Engineer specializing in Technical narrative, Video Game Characters & Movie Trailers. I work with a Yeti Blue microphone with Audacity audio software.</p>
+                <h4>Characters Sample</h4>
+                <audio controls>
+                  <source src="./assets/KielByrne_C.mp3" type="audio/ogg">
+                Your browser does not support the audio element.
+                </audio>
+                <h4>Narrative Sample</h4>
+                <audio controls>
+                  <source src="./assets/KielByrne_N.mp3" type="audio/ogg">
+                Your browser does not support the audio element.
+                </audio>
+              </div>
               <div><h3 class="text-center">MISC.</h3></div>
           </div>
         </section>
@@ -435,7 +475,7 @@
             company: 'Nelson\\Nygaard Consulting Associates',
             location: 'Washington D.C',
             description: [
-              "Narrated the 'Multimodal Transportation Plan' as presented to the City of Fairfax.",
+              "Narrated the 'Multi-modal Transportation Plan' as presented to the City of Fairfax.",
               "Produced and Edited final audio, mixed with video and converted to compressed video format.",
               ],
             start: 'November 2016',
@@ -446,7 +486,7 @@
             location: 'Manhattan, NY | Los Angeles, CA | Washington D.C',
             description: [
               "Tier 1-3 support of hardware, software systems, and peripherals; including networking LAN and WLAN management. ",
-              "Support global user-base on weekly basis via helpdesk ticketing system. ",
+              "Support global user-base on weekly basis via help-desk ticketing system. ",
               "Provisioning and configuration of employee accounts and equipment throughout their life cycles. ",
               "Created technical documentation of processes and systems, as well as provided training sessions for staff. ",
               "Directly support of at most four offices at a time, equating to 200+ users in four cities. ",
@@ -461,7 +501,7 @@
             description: [
               "Configured home office for Founding Partner, including site-to-site connection to remote office location; allowing for the relocation of key staff and facilitation of business continuity during months-long office renovations.",
               "Repaired and reconfigured anti-virus, DHCP, DNS, and file sharing/storage (DFS/NAS) systems—including the automation of backup processes.",
-              "Automated logon processes for consistent end-user environments across offices and devices."
+              "Automated log-on processes for consistent end-user environments across offices and devices."
             ],
             start: 'January 2013',
             end: 'August 2013'
@@ -470,7 +510,7 @@
             company: 'Rent The Runway',
             location: 'Manhattan, NY',
             description: [
-              "Administer all network, Internet, VOIP, cellular, security, A/V, deskside systems, and end-user software throughout their lifecycles; from procurement and configuration through maintenance, updates, and monitoring.",
+              "Administer all network, Internet, VOIP, cellular, security, A/V, desk-side systems, and end-user software throughout their life-cycles; from procurement and configuration through maintenance, updates, and monitoring.",
               "Creation of I.T. related budgets, network usage, bandwidth and other reports.",
               "Creation and maintenance of technical documentation libraries including inventories and manuals.",
               "Created and led training programs in order to boost business productivity via user education.",
@@ -479,7 +519,7 @@
             start: 'June 2011',
             end: 'March 2012'
           }, {
-            title: 'Plumbing & Fire Protecion Design Engineer',
+            title: 'Plumbing & Fire Protection Design Engineer',
             company: 'Kallen & Lemelson, Consulting Engineers, LLP',
             location: 'Manhattan, NY',
             description: [
@@ -488,11 +528,11 @@
             start: 'June 2010',
             end: 'March 2009'
           }, {
-            title: 'Plumbing & Fire Protecion Design Engineer',
+            title: 'Plumbing & Fire Protection Design Engineer',
             company: 'Fiskaa, LLC',
             location: 'Manhattan, NY',
             description: [
-              "Provided plumbing, fire protection, and life safety consulting support to various international clientele. Projects include but are not limited to; hotels, amusement park, residential, commercial and government office buildings, retail, healthcare facilities, schools.",
+              "Provided plumbing, fire protection, and life safety consulting support to various international clientele. Projects include but are not limited to; hotels, amusement park, residential, commercial and government office buildings, retail, health care facilities, schools.",
               "Created cost schedules for the plumbing and life safety systems involved on projects.",
               "Managed small team of CAD operators to efficiently satisfy tight deadlines.",
               "Awarded funds to obtain Plumbing Systems certificate at NYU.",
