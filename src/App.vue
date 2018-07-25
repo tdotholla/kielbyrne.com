@@ -366,7 +366,7 @@
             </ul>
           </div>
         </section>
-
+ 
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
           <div class="my-auto">
             <h2 class="mb-5">Interests</h2>
@@ -385,7 +385,7 @@
                 </p>
                 <img src="./assets/ss_mobb_mobile.png" />
                 <video width="400" controls autoplay />
-                  <source src="./assets/MOBB_Demo.MOV" type="video/mp4" />
+                  <source src="" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </section>
