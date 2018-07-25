@@ -11,7 +11,7 @@
   @media (min-width: 992px) {
     body {
       padding-top: 0;
-      padding-left: 8rem;
+      padding-left: 17rem;
     }
   }
 
@@ -143,11 +143,11 @@
     }
   }
 
-  .bg-primary {
+  .bg-primaryz {
     background-color: #622f75 !important;
   }
 
-  .text-primary {
+  .text-primaryz {
     color: #622f75 !important;
   }
 
@@ -165,7 +165,7 @@
 <template>
   <div class="main-wrapper">
     <body id="page-top">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primaryz fixed-top" id="sideNav">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
           <span class="d-none d-lg-block">
             <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="./assets/li_avatar.jpg" alt="" />
@@ -203,7 +203,7 @@
         <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
           <div class="my-auto">
             <h1 class="mb-0">Kiel Hamilton 
-              <span class="text-primary">Byrne</span>
+              <span class="text-primaryz">Byrne</span>
             </h1>
             <div class="subheading mb-5"> Silver Spring, MD 20902 · (914) 512-8532 ·
               <a href="mailto:kiel.byrne@gmail.com">kiel.byrne@gmail.com</a>
@@ -265,7 +265,7 @@
                 </ul>
               </div>
               <div class="resume-date text-md-right">
-                <span class="text-primary">{{exp.start}} - {{exp.end}}</span>
+                <span class="text-primaryz">{{exp.start}} - {{exp.end}}</span>
               </div>
             </div>
           </div>
@@ -283,7 +283,7 @@
                 <div>Mechanical Engineering</div>
               </div>
               <div class="resume-date text-md-right">
-                <span class="text-primary">August 2001 - May 2007</span>
+                <span class="text-primaryz">August 2001 - May 2007</span>
               </div>
             </div>
 
@@ -293,7 +293,7 @@
                 <div class="subheading mb-3">Regents Program</div>
               </div>
               <div class="resume-date text-md-right">
-                <span class="text-primary">August 1999 - May 2001</span>
+                <span class="text-primaryz">August 1999 - May 2001</span>
               </div>
             </div>
 
