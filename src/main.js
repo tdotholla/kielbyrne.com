@@ -4,7 +4,8 @@ import Vue from 'vue';
 import App from './App';
 import router from './router';
 
-require('bootstrap/dist/css/bootstrap.css');
+require('bootstrap/dist/css/bootstrap.min.css');
+require('bootstrap/dist/js/bootstrap.min.js');
 require('devicons/css/devicons.css');
 require('font-awesome/css/font-awesome.css');
 
