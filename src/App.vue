@@ -2,7 +2,7 @@
 <template>
   <div class="main-wrapper" id="page-top">
       <nav class="navbar navbar-expand-lg navbar-dark bg-primaryz fixed-top" id="sideNav">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <a class="js-scroll-trigger" href="#page-top">
           <span class="d-lg-none d-sm-block">
             <img class="img-fluid img-profile rounded-circle mx-auto" width="44" src="./assets/li_avatar.jpg" alt="" />
           </span>
@@ -15,7 +15,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item ">
+            <li class="nav-item active">
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
             <li class="nav-item">
