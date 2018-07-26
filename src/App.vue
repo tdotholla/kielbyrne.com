@@ -2,8 +2,8 @@
 <template>
   <div class="main-wrapper" id="page-top">
       <nav class="navbar navbar-expand-lg navbar-dark bg-primaryz fixed-top" id="sideNav">
-        <a class="js-scroll-trigger" href="#page-top">
-          <span class="d-lg-none d-sm-block">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+          <span class="d-lg-none d-block">
             <img class="img-fluid img-profile rounded-circle mx-auto" width="44" src="./assets/li_avatar.jpg" alt="" />
           </span>
           <span class="d-none d-lg-block">
@@ -246,20 +246,26 @@
                 <h4>PAKKE</h4>
                 <p><span><a href="https://www.pakke.us" target="_blank">PAKKE.us</a></span> is <em>the</em> resource to host, entertain, and attend unique local experiences. it is informative, responsive, progressive and socially engaging. The community is comprised of local entertainers, owners of inviting & accepting spaces, and party-goers bored with the 'typical night out'. 
                 </p>
-                <img width="620" class="rounded mx-auto d-block" src="./assets/ssf_pakke_desktop.png" />                
+                <div>
+                  <img class=" img-fluid rounded  mx-auto d-block" src="./assets/ssf_pakke_desktop.png" style="display: block;" />  
+                </div>              
               </section>
 
               <section class="container-fluid">
                 <h4>MOBB</h4>
                 <p>The <span><a href="https://www.mobb.biz" target="_blank">MOBB</a></span> is a tool to locate businesses closest to you that are owned by those in Our Community. As a tool, It aims to help you discover new business near you, wherever you may be. 
                 </p>
-                <img width="320"  class="mx-auto d-inline" src="./assets/ss_mobb_mobile.png" />
-                
-                  <video width="320" controls >
-                    <source class="rounded mx-auto d-inline" src="./assets/MOBB_Demo.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                
+                <div class="d-flex justify-content-around" >
+                  <div class="col-md-6 mx-auto">
+                    <img class="img-fluid" src="./assets/ss_mobb_mobile.png" />
+                  </div>
+                  <div class="col-md-6 embed-responsive">
+                    <video controls >
+                      <source src="./assets/MOBB_Demo.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
               </section>
             </div>
               <div>
