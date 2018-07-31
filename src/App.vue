@@ -118,8 +118,8 @@
             <div class="resume-item d-flex flex-column flex-md-row mb-5">
               <div class="resume-content mr-auto">
                 <h3 class="mb-0">University of Maryland, Baltimore County</h3>
-                <div class="subheading mb-3">Bachelor of Science Candidate</div>
-                <div>Mechanical Engineering</div>
+                <div class="subheading mb-3">Mechanical Engineering</div>
+                <div>Catonsville, MD</div>
               </div>
               <div class="resume-date text-md-right">
                 <span class="text-primaryz">August 2001 - May 2007</span>
@@ -129,7 +129,7 @@
             <div class="resume-item d-flex flex-column flex-md-row">
               <div class="resume-content mr-auto">
                 <h3 class="mb-0">Fordham Preparatory School</h3>
-                <div class="subheading mb-3">Regents Program</div>
+                <div class="subheading mb-3">Regents & AP Program</div>
               </div>
               <div class="resume-date text-md-right">
                 <span class="text-primaryz">August 1999 - May 2001</span>
@@ -255,11 +255,11 @@
                 <h4>MOBB</h4>
                 <p>The <span><a href="https://www.mobb.biz" target="_blank">MOBB</a></span> is a tool to locate businesses closest to you that are owned by those in Our Community. As a tool, It aims to help you discover new business near you, wherever you may be. 
                 </p>
-                <div class="d-flex justify-content-around" >
-                  <div class="col-md-6 mx-auto">
+                <div class="d-flex " >
+                  <div class="col-md-6 col-xs-12 mx-auto">
                     <img class="img-fluid" src="./assets/ss_mobb_mobile.png" />
                   </div>
-                  <div class="col-md-6 embed-responsive">
+                  <div class="col-md-6 col-xs-12 embed-responsive" style="height: 568px">
                     <video controls >
                       <source src="./assets/MOBB_Demo.mp4" type="video/mp4">
                       Your browser does not support the video tag.
@@ -271,16 +271,13 @@
               <div>
                 <h3 class="text-center">MEDIA</h3>
                 <p>I am a Voice Actor & Audio Engineer specializing in Technical narrative, Video Game Characters & Movie Trailers. I record with a Yeti Blue microphone &amp; engineer with Audacity software.</p>
+
                 <h4>Characters Sample</h4>
                 <audio controls class="w-100 mt-3">
                   <source src="./assets/KielByrne_C.mp3" type="audio/mp3">
                   Your browser does not support the audio element.
                 </audio>
-                <h4>Narrative Sample</h4>
-                <audio controls class="w-100 mt-3">
-                  <source src="./assets/KielByrne_N.mp3" type="audio/mp3">
-                  Your browser does not support the audio element.
-                </audio>
+                
                 <h4>Technical Sample (Multi-Modal Transportation Plan)</h4>
                 <audio controls class="w-100 mt-3">
                   <source src="./assets/KielByrne_NN_NORTA.mp3" type="audio/mp3">
@@ -305,7 +302,7 @@
             title: 'Co-Founder',
             company: 'PAKKE.US',
             location: 'Washington D.C',
-            description: ['PAKKE is a platform to activate underutilized spaces--such as homes, apartments, backyards, and after hours shops--for unique multi-sensory, accessible and affordable experiences outside of the overcrowded norms we have come grown accustomed to. We believe in the joy of connecting people and elevating a vibrant network of artists, chefs, craftsmen, musicians, wellness talent, and writers for more unique experiences.'],
+            description: ['PAKKE is a platform to activate underutilized spaces--such as homes, apartments, backyards, and after hours shops--for unique multi-sensory, accessible and affordable experiences outside of the overcrowded norms we have come grown accustomed to. We believe in the joy of connecting people and elevating a vibrant network of artists, chefs, craftsmen, musicians, wellness talent, and writers for more unique experiences.', 'I lead the development of the product (www.PAKKE.us) via software development, version control, issue & team management, and cloud-based collaboration'],
             start: 'May 2018',
             end: 'Present'
           }, {
