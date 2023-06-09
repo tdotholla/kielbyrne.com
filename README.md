@@ -1,29 +1,10 @@
-# my-app
+![Random image](https://picsum.photos/900/300)
 
-🎉 Generated with [Create Next Stack](https://www.create-next-stack.com/)!
+# Digital Resume of Kiel H. Byrne
 
-To get started, run:
+<!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/a49d1b1f-08a3-4d0d-9162-f9fe34497b67/deploy-status)](https://app.netlify.com/sites/kielbyrne/deploys) -->
 
-```bash
-yarn dev
-```
-
-## Scripts
-
-| Name           | Description                                                                                                                                                                                                                                     |
-| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `prepare`      | The [`prepare` life cycle script](https://docs.npmjs.com/cli/v7/using-npm/scripts#life-cycle-scripts) is used to set up Git pre-commit hooks when people install dependencies, eg. using `npm install`. This script should not be run manually. |
-| `test`         | Runs tests                                                                                                                                                                                                                                      |
-| `dev`          | Runs the Next.js development server.                                                                                                                                                                                                            |
-| `build`        | Generates a production build.                                                                                                                                                                                                                   |
-| `start`        | Runs the Next.js production server built using `build` script.                                                                                                                                                                                  |
-| `lint`         | Runs [ESLint](https://eslint.org/) to catch linting errors in the source code.                                                                                                                                                                  |
-| `format`       | Formats all source code in the project.                                                                                                                                                                                                         |
-| `format:check` | Checks the formatting of all code in the project.                                                                                                                                                                                               |
-
-## Technologies
-
-The table below gives an overview of the technologies used in this project, as well as places to learn more about them.
+## Built With
 
 | Name            | Links                                                                                                                                                                                                           |
 | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
