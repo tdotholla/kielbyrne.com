@@ -3,6 +3,7 @@
 # Digital Resume of Kiel H. Byrne
 
 <!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/a49d1b1f-08a3-4d0d-9162-f9fe34497b67/deploy-status)](https://app.netlify.com/sites/kielbyrne/deploys) -->
+<!-- [!Vercel Status](https://img.shields.io/github/deployments/Kiel-H-Byrne/kielbyrne.com/production?label=vercel&logo=vercel&logoColor=white) -->
 
 ## Built With
 

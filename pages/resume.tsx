@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import { Button, Container, Flex } from "@chakra-ui/react";
-import React, { Suspense, useState } from "react";
-import { Document, Page } from "react-pdf";
+import React, { useState } from "react";
 
 enum PDFTYPES {
   PR = "Personal Resume",
