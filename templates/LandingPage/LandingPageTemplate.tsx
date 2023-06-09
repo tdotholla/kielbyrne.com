@@ -1,6 +1,5 @@
 import Script from "next/script";
-import styles from "./LandingPageTemplate.module.css";
-import { Container, Link, Text } from "@chakra-ui/react";
+import { Link, Text } from "@chakra-ui/react";
 
 const LandingPageTemplate = () => {
   const onConfettiLoad = () => {
@@ -50,64 +49,45 @@ const LandingPageTemplate = () => {
   };
 
   return (
-    <div className={styles.landingPageTemplate}>
+    <div>
       <Script
         src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.9.3/tsparticles.confetti.bundle.min.js"
         onLoad={onConfettiLoad}
       />
-      <style>
-        {`
-          * {
-            box-sizing: border-box;
-          }
-
-          html,
-          body {
-            padding: 0;
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-              Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-              sans-serif;
-            line-height: 1.5;
-          }
-        `}
-      </style>
       <main>
-        <Container>
-          <Text>
-            👋 Hey there! I'm Kiel Byrne, an IT Consultant and Web Developer
-            based in the vibrant DC Metropolitan Area. Born under the meticulous
-            Virgo sign on September 17th, I thrive on staying busy and engaged.
-            When I'm not immersed in creating innovative solutions, you can find
-            me enjoying quality time with my amazing family – happily married
-            with two brilliant boys who keep me on my toes. In my quest to make
-            a positive impact, I build tools that foster communities and empower
-            individuals on their path to self-discovery and growth. I'm deeply
-            passionate about discussing financial literacy and exploring various
-            paths to financial freedom, be it through cryptocurrency, options
-            trading, Forex, entrepreneurship, or real estate ventures. I'm also
-            fascinated by topics like Initiative 71 & the Farm Act, emerging
-            trends, and the power of group economics. When I need a break from
-            the fast-paced world of technology, I indulge in YouTube videos that
-            delve into metaphysics, ancient civilizations, and lifehacks. To
-            find moments of tranquility and balance, I practice meditation,
-            often incorporating visualization techniques or immersing myself in
-            the soothing sounds of a crystal bowl. Humor plays an important role
-            in my downtime, and shows like Desus & Mero and All Def Digital
-            never fail to provide some much-needed comic relief. Additionally, I
-            actively seek light by exploring spiritual alchemy, diving into
-            readings that enlighten me on profound topics, and conducting
-            Masonic business. If you want to connect and discuss exciting
-            projects, collaborations, or simply share interesting ideas, feel
-            free to reach out to me via email at{" "}
-            <Link href="mailto:kiel.byrne@gmail.com">kiel.byrne@gmail.com</Link>{" "}
-            or give me a call at{" "}
-            <Link href="tel:+12024686155">(202) 468-6155</Link>. Also check out
-            my IT Consulting company,{" "}
-            <Link href="https://www.tenksolutions.com">TenK Solutions</Link>.
-            Let's make a positive change in the world together! 😊
-          </Text>
-        </Container>
+        <Text lineHeight={2} fontFamily={"body"}>
+          👋 Hey there! I'm Kiel Byrne, an IT Consultant and Web Developer based
+          in the vibrant DC Metropolitan Area. Born under the meticulous Virgo
+          sign on September 17th, I thrive on staying busy and engaged. When I'm
+          not immersed in creating innovative solutions, you can find me
+          enjoying quality time with my amazing family – happily married with
+          two brilliant boys who keep me on my toes. In my quest to make a
+          positive impact, I build tools that foster communities and empower
+          individuals on their path to self-discovery and growth. I'm deeply
+          passionate about discussing financial literacy and exploring various
+          paths to financial freedom, be it through cryptocurrency, options
+          trading, Forex, entrepreneurship, or real estate ventures. I'm also
+          fascinated by topics like Initiative 71 & the Farm Act, emerging
+          trends, and the power of group economics. When I need a break from the
+          fast-paced world of technology, I indulge in YouTube videos that delve
+          into metaphysics, ancient civilizations, and lifehacks. To find
+          moments of tranquility and balance, I practice meditation, often
+          incorporating visualization techniques or immersing myself in the
+          soothing sounds of a crystal bowl. Humor plays an important role in my
+          downtime, and shows like Desus & Mero and All Def Digital never fail
+          to provide some much-needed comic relief. Additionally, I actively
+          seek light by exploring spiritual alchemy, diving into readings that
+          enlighten me on profound topics, and conducting Masonic business. If
+          you want to connect and discuss exciting projects, collaborations, or
+          simply share interesting ideas, feel free to reach out to me via email
+          at{" "}
+          <Link href="mailto:kiel.byrne@gmail.com">kiel.byrne@gmail.com</Link>{" "}
+          or give me a call at{" "}
+          <Link href="tel:+12024686155">(202) 468-6155</Link>. Also check out my
+          IT Consulting company,{" "}
+          <Link href="https://www.tenksolutions.com">TenK Solutions</Link>.
+          Let's make a positive change in the world together! 😊
+        </Text>
       </main>
     </div>
   );
