@@ -26,7 +26,7 @@ const Navbar = () => {
         mx="auto"
         boxShadow={"md"}
         p={{ base: 1, sm: 2 }}
-        my={"4"}
+        mb={4}
       >
         <Flex>
           <Link
