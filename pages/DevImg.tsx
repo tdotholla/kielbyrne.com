@@ -494,3 +494,5 @@ export function DevImg({
     </HStack>
   );
 }
+
+export default DevImg;

@@ -1,8 +1,10 @@
 import {
   Box,
+  Button,
   Flex,
   HStack,
   Image,
+  Link,
   PositionProps,
   Stack,
   Text,
@@ -16,11 +18,11 @@ export const WDCarousel = () => {
     w: "auto",
     mt: "-22px",
     p: "16px",
-    color: "white",
+    bg: "blackAlpha.200",
+    color: "whitesmoke",
     fontWeight: "bold",
     fontSize: "18px",
     transition: "0.6s ease",
-    borderRadius: "0 3px 3px 0",
     _hover: {
       opacity: 0.8,
       bg: "black",
@@ -128,19 +130,32 @@ export const WDCarousel = () => {
                 textAlign="center"
                 w="full"
                 mb="8"
-                bg={"blackAlpha.700"}
+                bg={"blackAlpha.600"}
                 color="white"
               >
                 <Text fontSize="2xl">{slide.label}</Text>
                 <Text fontSize="lg">{slide.description}</Text>
+                <Link isExternal fontSize="md" href={slide.url}>
+                  <Button colorScheme="yellow">Visit</Button>
+                </Link>
               </Stack>
             </Box>
           ))}
         </Flex>
-        <Text {...arrowStyles} left="0" onClick={prevSlide}>
+        <Text
+          {...arrowStyles}
+          borderRadius="0 5px 5px 0"
+          left="0"
+          onClick={prevSlide}
+        >
           &#10094;
         </Text>
-        <Text {...arrowStyles} right="0" onClick={nextSlide}>
+        <Text
+          {...arrowStyles}
+          borderRadius="5px 0 0 5px"
+          right="0"
+          onClick={nextSlide}
+        >
           &#10095;
         </Text>
         <HStack justify="center" pos="absolute" bottom="8px" w="full">
@@ -171,3 +186,5 @@ export const WDCarousel = () => {
     </Flex>
   );
 };
+
+export default WDCarousel;

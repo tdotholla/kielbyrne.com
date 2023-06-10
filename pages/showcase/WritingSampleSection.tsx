@@ -50,3 +50,5 @@ export const WritingSampleSection = () => {
     </Box>
   );
 };
+
+export default WritingSampleSection;

@@ -60,3 +60,5 @@ export const VoiceTalentShowcase = () => {
     </Stack>
   );
 };
+
+export default VoiceTalentShowcase;
