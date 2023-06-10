@@ -1,14 +1,14 @@
 import Navbar from "@/components/Navbar";
 import { Box, Button, Container, Flex } from "@chakra-ui/react";
-import React, { useState } from "react";
+import { useState } from "react";
 
 enum PDFTYPES {
   PR = "Personal Resume",
   CV = "Professional CV",
 }
 enum PDFPATHS {
-  PR = "KHB_Resume.pdf",
-  CV = "KHB_CCV.pdf",
+  PR = "docs/KHB_Resume.pdf",
+  CV = "docs/KHB_CCV.pdf",
 }
 const ResumePage = () => {
   const [pdfTitle, setpdfTitle] = useState(PDFTYPES.CV as string);

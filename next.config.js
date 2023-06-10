@@ -4,6 +4,17 @@ const nextConfig = {
   compiler: {
     emotion: true,
   },
+  images: {
+    dangerouslyAllowSVG: true,
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "img.shields.io",
+        port: "",
+        pathname: "/badge/*",
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;

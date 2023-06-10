@@ -1,22 +1,21 @@
-import React from "react";
-import { AiOutlineMenu } from "react-icons/ai";
 import {
+  Avatar,
   Box,
   Button,
+  CloseButton,
   Flex,
   HStack,
   IconButton,
   Link,
+  VStack,
+  VisuallyHidden,
   useColorModeValue,
   useDisclosure,
-  VisuallyHidden,
-  VStack,
-  CloseButton,
-  Avatar,
 } from "@chakra-ui/react";
+import { AiOutlineMenu } from "react-icons/ai";
 const Links = ["Showcase", "Resume", "Skills", "Blog"];
 const Navbar = () => {
-  const bg = useColorModeValue("white", "gray.800");
+  const bg = useColorModeValue("whitesmoke", "gray.800");
   const mobileNav = useDisclosure();
   return (
     <nav>
@@ -25,7 +24,7 @@ const Navbar = () => {
         justifyContent="space-between"
         mx="auto"
         boxShadow={"md"}
-        bg={"whitesmoke"}
+        bg={bg}
         p={{ base: 1, sm: 2 }}
         mb={4}
       >
@@ -100,21 +99,26 @@ const Navbar = () => {
               bg={bg}
               spacing={3}
               rounded="sm"
-              shadow="sm"
+              shadow={{ base: "sm", sm: "md" }}
               zIndex={"1"}
             >
-              <CloseButton
-                aria-label="Close menu"
-                onClick={mobileNav.onClose}
-                justifySelf={"right"}
-              />
-              {Links.map((link: string) => (
-                <Link key={link} href={`/${link.toLowerCase()}`}>
-                  <Button w="full" variant="ghost" key={link}>
-                    {link}
-                  </Button>
-                </Link>
-              ))}
+              <Flex width="full" justifyContent={"space-between"}>
+                <Avatar />
+                <Box>
+                  {Links.map((link: string) => (
+                    <Link key={link} href={`/${link.toLowerCase()}`}>
+                      <Button w="full" variant="ghost" key={link}>
+                        {link}
+                      </Button>
+                    </Link>
+                  ))}
+                </Box>
+                <CloseButton
+                  aria-label="Close menu"
+                  onClick={mobileNav.onClose}
+                  margin={2}
+                />
+              </Flex>
             </VStack>
           </Box>
         </HStack>

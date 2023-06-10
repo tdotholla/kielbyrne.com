@@ -1,9 +1,21 @@
-![Random image](https://picsum.photos/900/300)
+<!-- ![Random image](https://picsum.photos/900/300) -->
+
+<img src="https://kielbyrne.com/assets/img/kielbw.jpg" height="150" width="600" style=" object-fit: cover; object-position: 0 -25px; border-radius: 7px" />
 
 # Digital Resume of Kiel H. Byrne
 
 <!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/a49d1b1f-08a3-4d0d-9162-f9fe34497b67/deploy-status)](https://app.netlify.com/sites/kielbyrne/deploys) -->
-<!-- [!Vercel Status](https://img.shields.io/github/deployments/Kiel-H-Byrne/kielbyrne.com/production?label=vercel&logo=vercel&logoColor=white) -->
+
+![Vercel Status](https://img.shields.io/github/deployments/Kiel-H-Byrne/kielbyrne.com/production?label=vercel&logo=vercel)
+
+![GitHub repo size](https://img.shields.io/github/repo-size/kiel-h-byrne/kielbyrne.com)
+![Github code size](https://img.shields.io/github/languages/code-size/kiel-h-byrne/kielbyrne.com)
+![Github Languages](https://img.shields.io/github/languages/count/kiel-h-byrne/kielbyrne.com)
+![Github Top Language](https://img.shields.io/github/languages/top/kiel-h-byrne/kielbyrne.com)
+
+![GitHub Issues](https://img.shields.io/github/issues-raw/kiel-h-byrne/kielbyrne.com)
+![GitHub contributors](https://img.shields.io/github/contributors/kiel-h-byrne/kielbyrne.com)
+![Github Last Commit](https://img.shields.io/github/last-commit/kiel-h-byrne/kielbyrne.com)
 
 ## Built With
 
