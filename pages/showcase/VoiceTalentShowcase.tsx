@@ -1,5 +1,4 @@
-import { Box, Heading, Stack, Text } from "@chakra-ui/react";
-import Image from "next/image";
+import { Box, Heading, Image, Stack, Text } from "@chakra-ui/react";
 
 export const VoiceClip = ({
   imageSrc,
@@ -14,8 +13,8 @@ export const VoiceClip = ({
 }) => {
   return (
     <Box p={4} borderWidth="1px" borderRadius="md" w={"sm"}>
-      <Image src={imageSrc} alt="Voice Clip" mb={4} />
-      <Heading as="h2" size="md" mb={2}>
+      <Image src={imageSrc} alt="Voice Clip" />
+      <Heading size="md" marginBlock={2}>
         {heading}
       </Heading>
       <Text mb={4}>{description}</Text>
@@ -27,19 +26,21 @@ export const VoiceTalentShowcase = () => {
   const voiceClips = [
     {
       imageSrc: "https://picsum.photos/400/150?s=1",
-      description: "Characters Clip",
+      description:
+        "Clip of many different characters' voices for commercial spots",
       heading: "Characters",
       audioSrc: "/audio/KielByrne_C.mp3",
     },
     {
       imageSrc: "https://picsum.photos/400/150?s=2",
-      description: "Narrative Clip",
+      description: "Clip of narration for children's book",
       heading: "Narrative",
       audioSrc: "/audio/KielByrne_N.mp3",
     },
     {
       imageSrc: "https://picsum.photos/400/150?s=3",
-      description: "Technical Informational Clip",
+      description:
+        "Presentation made for Nelson/Nygaard for the City of New Orleans",
       heading: "Technical Informational",
       audioSrc: "/audio/KielByrne_NN_NORTA.mp3",
     },

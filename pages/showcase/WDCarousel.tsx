@@ -2,11 +2,11 @@ import {
   Box,
   Flex,
   HStack,
+  Image,
   PositionProps,
   Stack,
   Text,
 } from "@chakra-ui/react";
-import Image from "next/image";
 import { useState } from "react";
 export const WDCarousel = () => {
   const arrowStyles = {
@@ -31,32 +31,39 @@ export const WDCarousel = () => {
       url: "https://mobb.kielbyrne.com",
       img: "/img/screencapture-mobb.png",
       label: "The MOBB",
-      description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+      description:
+        "The Map of Black Businesses (MoBB) allows clients to locate black owned businesses in their immediate vicinity, allowing increased support and patronage for visitors of new areas.",
     },
     {
       url: "https://pwitw.kielbyrne.com",
       img: "/img/screencapture-pwitw.png",
       label: "PWITW",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: `"PerkinsWill Where In The World" - An asset-tracking dashboard for 1000+ devices across 20+ offices. Utilizes powershell scripts and MS Windows Rules to send location and OS data to secure database startup.`,
     },
     {
       url: "https://todaysMath.kielbyrne.com",
       img: "/img/screencapture-todaysMath.png",
       label: "Todays Supreme Mathematics",
-      description:
-        "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
+      description: `Supreme Calculus - An online 365 day calendar giving you "Today's Mathematics" everyday, with room to discuss & build.`,
     },
     {
       url: "https://shop.kielbyrne.com",
       img: "/img/screencapture-shop.png",
       label: "Mask Shop",
-      description: "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+      description:
+        "E-commerce static site to sell PPE (K95 Facemasks & Accessories)",
     },
     {
-      url: "https://www.kielbyrne.com",
-      img: "/img/screencapture-www.png",
-      label: "APXPRVLG",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      url: "https://thisweeksplays.kielbyrne.com",
+      img: "/img/screencapture-thisweeksplays.png",
+      label: "This Week's Plays",
+      description: `Create and view stock plays from community members, track performance and follow members; leaderboard for "plays of the week"`,
+    },
+    {
+      url: "https://pullup.kielbyrne.com",
+      img: "/img/screencapture-pullup.png",
+      label: "Pull Up!",
+      description: `Pull up to a destination location i.e. downtown; open the "PullUp App" and find live reviews/posts or messages left for you in the immediate area.`,
     },
   ];
   const [currentSlide, setCurrentSlide] = useState(0);
