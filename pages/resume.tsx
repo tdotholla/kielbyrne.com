@@ -1,5 +1,5 @@
 import Navbar from "@/components/Navbar";
-import { Button, Container, Flex } from "@chakra-ui/react";
+import { Box, Button, Container, Flex } from "@chakra-ui/react";
 import React, { useState } from "react";
 
 enum PDFTYPES {
@@ -24,7 +24,7 @@ const ResumePage = () => {
     }
   };
   return (
-    <Container maxW={"container.xl"} height={"container.lg"} p={0}>
+    <Container maxW={"container.xl"} height={"container.lg"} pb={6}>
       <Navbar />
       <Flex justifyContent={"center"} width={"full"}>
         <Button
@@ -37,17 +37,19 @@ const ResumePage = () => {
           View {pdfTitle}
         </Button>
       </Flex>
-      <object
-        data={`${pdfPath}`}
-        type="application/pdf"
-        width="100%"
-        height="100%"
-      >
-        <p>
-          Unable to display PDF file. <a href={`/${pdfPath}`}>Download</a>{" "}
-          instead.
-        </p>
-      </object>
+      <Box pb={4} h={"full"} w={"full"}>
+        <object
+          data={`${pdfPath}`}
+          type="application/pdf"
+          width="100%"
+          height="100%"
+        >
+          <p>
+            Unable to display PDF file. <a href={`/${pdfPath}`}>Download</a>{" "}
+            instead.
+          </p>
+        </object>
+      </Box>
     </Container>
   );
 };

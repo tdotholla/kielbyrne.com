@@ -14,7 +14,7 @@ import {
   CloseButton,
   Avatar,
 } from "@chakra-ui/react";
-
+const Links = ["Showcase", "Resume", "Skills", "Blog"];
 const Navbar = () => {
   const bg = useColorModeValue("white", "gray.800");
   const mobileNav = useDisclosure();
@@ -25,6 +25,7 @@ const Navbar = () => {
         justifyContent="space-between"
         mx="auto"
         boxShadow={"md"}
+        bg={"whitesmoke"}
         p={{ base: 1, sm: 2 }}
         mb={4}
       >
@@ -53,22 +54,18 @@ const Navbar = () => {
               md: "inline-flex",
             }}
           >
-            <Link href="/showcase">
-              <Button variant="ghost">Showcase</Button>
-            </Link>
-            <Link href="/resume">
-              <Button variant="ghost">Resume</Button>
-            </Link>
-            <Link href="/blog">
-              <Button variant="ghost">Blog</Button>
-            </Link>
-            <Link href="/skill">
-              <Button variant="ghost">Skills</Button>
-            </Link>
+            {Links.map((link: string) => (
+              <Link href={`/${link.toLowerCase()}`} key={link}>
+                <Button variant="outline" colorScheme={"purple"}>
+                  {link}
+                </Button>
+              </Link>
+            ))}
+
+            <Button colorScheme="yellow" variant="outline">
+              Contact Me
+            </Button>
           </HStack>
-          <Button colorScheme="brand" size="sm">
-            Get Started
-          </Button>
           <Box
             display={{
               base: "inline-flex",
@@ -100,31 +97,24 @@ const Navbar = () => {
               flexDirection="column"
               p={2}
               pb={4}
-              m={2}
               bg={bg}
               spacing={3}
               rounded="sm"
               shadow="sm"
+              zIndex={"1"}
             >
               <CloseButton
                 aria-label="Close menu"
                 onClick={mobileNav.onClose}
+                justifySelf={"right"}
               />
-              <Button w="full" variant="ghost">
-                Features
-              </Button>
-              <Button w="full" variant="ghost">
-                Pricing
-              </Button>
-              <Button w="full" variant="ghost">
-                Blog
-              </Button>
-              <Button w="full" variant="ghost">
-                Company
-              </Button>
-              <Button w="full" variant="ghost">
-                Sign in
-              </Button>
+              {Links.map((link: string) => (
+                <Link key={link} href={`/${link.toLowerCase()}`}>
+                  <Button w="full" variant="ghost" key={link}>
+                    {link}
+                  </Button>
+                </Link>
+              ))}
             </VStack>
           </Box>
         </HStack>
