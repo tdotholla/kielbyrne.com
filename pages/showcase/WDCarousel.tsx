@@ -43,8 +43,8 @@ export const WDCarousel = () => {
       description: `"PerkinsWill Where In The World" - An asset-tracking dashboard for 1000+ devices across 20+ offices. Utilizes powershell scripts and MS Windows Rules to send location and OS data to secure database startup.`,
     },
     {
-      url: "https://todaysMath.kielbyrne.com",
-      img: "/img/screencapture-todaysMath.png",
+      url: "https://todaysmath.kielbyrne.com",
+      img: "/img/screencapture-todaysmath.png",
       label: "Todays Supreme Mathematics",
       description: `Supreme Calculus - An online 365 day calendar giving you "Today's Mathematics" everyday, with room to discuss & build.`,
     },
