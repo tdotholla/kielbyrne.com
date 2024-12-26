@@ -1,4 +1,4 @@
-import { Box, Heading, Image, Link, SimpleGrid, Text } from "@chakra-ui/react";
+import Link from "next/link";
 
 export const WritingSampleSection = () => {
   const writingSamples = [

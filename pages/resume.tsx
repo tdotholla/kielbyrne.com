@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import { Box, Button, Container, Flex } from "@chakra-ui/react";
 import { useState } from "react";
 
 enum PDFTYPES {

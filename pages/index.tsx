@@ -1,22 +1,35 @@
+// pages/index.tsx
+import AboutSection from "@/components/AboutSection";
 import Navbar from "@/components/Navbar";
-import { NextPage } from "next";
+import type { NextPage } from "next";
 import Head from "next/head";
-import LandingPageTemplate from "../templates/LandingPage/LandingPageTemplate";
+import HeroSection from "../components/HeroSection";
+// Import other sections as you build them
 
-const Index: NextPage = () => {
+const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Kiel H. Byrne</title>
+        <title>Kiel Byrne | Home</title>
         <meta
           name="description"
-          content="Personal Webpage for Kiel Hamilton Byrne"
+          content="Innovating Solutions, Building Communities, Empowering Change."
         />
       </Head>
       <Navbar />
-      <LandingPageTemplate />
+
+      <main>
+        <HeroSection />
+        <AboutSection />
+        {/*
+        <ServicesSection />
+        <PortfolioSection />
+        <BlogSection />
+        <ContactSection />
+        <Footer /> */}
+      </main>
     </>
   );
 };
 
-export default Index;
+export default Home;

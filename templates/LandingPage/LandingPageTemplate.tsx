@@ -1,5 +1,5 @@
+import Link from "next/link";
 import Script from "next/script";
-import { Link, Text } from "@chakra-ui/react";
 
 const LandingPageTemplate = () => {
   const onConfettiLoad = () => {
